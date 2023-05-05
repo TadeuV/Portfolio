@@ -342,6 +342,58 @@ export const Appear = () => ({
     },
   }
 });
+export const AppearMobile = () => ({
+  hidden: {
+    top:0,
+    opacity: 0,
+  },
+
+  hover:{
+    top:230,
+    // right:-200,
+    opacity:0.9,
+    transition: {
+      type: 'tween',
+      duration: .5,
+      delay: 0.1,
+    },
+  }
+});
+export const AppearMobileSM = () => ({
+  hidden: {
+    top:0,
+    opacity: 0,
+  },
+
+  hover:{
+    top:270,
+    // right:-200,
+    opacity:0.9,
+    transition: {
+      type: 'tween',
+      duration: .5,
+      delay: 0.1,
+    },
+  }
+});
+export const AppearMobileLG = () => ({
+  hidden: {
+    top:0,
+    opacity: 0,
+  },
+
+  hover:{
+    right:-450,
+    top:180,
+    // right:-200,
+    opacity:0.9,
+    transition: {
+      type: 'tween',
+      duration: .5,
+      delay: 0.1,
+    },
+  }
+});
 export const AppearMain = () => ({
   
 
