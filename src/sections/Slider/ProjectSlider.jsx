@@ -26,9 +26,9 @@ export default function ProjectsSlider() {
         <div className="h-[400px] xl:h-[500px] w-[100%] ">
           <div className="bg-[url('/Projects/2-ChatGPT.png')] h-full w-full bg-contain bg-center bg-no-repeat"></div>
         </div>
-        <div className="h-[400px] xl:h-[490px] w-[100%] ">
+        {/* <div className="h-[400px] xl:h-[490px] w-[100%] ">
           <div className="bg-[url('/Projects/1-GrocerAppIn-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
-        </div>
+        </div> */}
         <div className="h-[400px] xl:h-[490px] w-[100%] ">
           <div className="bg-[url('/Projects/1-GrocerAppIn-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
         </div>

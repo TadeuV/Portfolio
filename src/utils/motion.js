@@ -237,7 +237,7 @@ export const fadeIn4 = (direction, type, delay, duration) => ({
     },
   },
   hover: {
-    width:200,
+    
     x: 0,
     y: 0,
     opacity: 0.9,

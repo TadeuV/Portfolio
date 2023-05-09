@@ -1,8 +1,9 @@
 import '../App.css'
 import {motion} from 'framer-motion'
 import TypeWriterEffect from 'react-typewriter-effect'
-import { fadeIn2,draw,dropIn, fadeIn,bounceball,textContainer,textVariant,textVariant2,textVariant3,textVariant4,zoomIn,planetVariants,staggerContainer} from '../utils/motion'
-import {useState,useEffect} from 'react';
+import { fadeIn2,textVariant,textVariant2,textVariant3,staggerContainer} from '../utils/motion'
+import {Link} from 'react-router-dom'
+
 
 export default function Hero () {
 
@@ -49,7 +50,7 @@ export default function Hero () {
               whileTap={{ scale: 0.9 }}
               viewport={{once:true}}>
             <svg className="fill-current w-8 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-            <span>Resume</span>
+            <Link to="/Resume.pdf" target="_blank" download>Resume</Link>
           </motion.button>
           <motion.button
               variants={fadeIn2('right','spring',0,0.8)} initial='hidden' whileInView='show'

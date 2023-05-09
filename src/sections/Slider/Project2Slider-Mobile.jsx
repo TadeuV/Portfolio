@@ -20,8 +20,8 @@ export default function ProjectsSlider() {
     };
     return (
       <Slider {...settings}>
-        <div className="h-[477px] w-[100%]">
-          <div className="bg-[url('/Projects/ChatGPT.png')] h-full w-full bg-cover bg-start bg-no-repeat"></div>
+        <div className="h-[500px] w-[100%]">
+          <div className="bg-[url('/Projects/2-Chat.png')] h-full w-full  bg-contain  bg-center bg-no-repeat border-none"></div>
         </div>
       </Slider>
     );

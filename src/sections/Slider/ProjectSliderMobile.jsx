@@ -28,10 +28,9 @@ export default function ProjectsSlider() {
           <div className="bg-[url('/Projects/2-ChatGPT-Mobile.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
             {/* <img src="/Projects/2-ChatGPT-Mobile.png" title="ChatGPT Replica" className="h-full w-full border-none"/> */}
         </div>
-        <div className="h-[370px] w-[463px]">
+        {/* <div className="h-[370px] w-[463px]">
          <div className="bg-[url('/Projects/2-ChatGPT-Mobile.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
-         {/* <img src="/Projects/1-GrocerAppIn-Mobile.png" title="GrocerApp" className="h-full w-full border-none"/> */}
-        </div>
+        </div> */}
         <div className="h-[370px] w-[463px]">
           <div className="bg-[url('/Projects/2-ChatGPT-Mobile.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
             {/* <img src="/Projects/1-GrocerAppIn-Mobile.png" title="GrocerApp" className="h-full w-full border-none"/> */}

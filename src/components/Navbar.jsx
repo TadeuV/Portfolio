@@ -7,39 +7,40 @@
 import {GithubIcon,LinkedInIcon,GmailIcon} from '../utils/Icons'
 import {motion} from 'framer-motion'
 import { fadeIn2,draw,bounceball} from '../utils/motion'
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {useNavigate} from 'react-router-dom'
 import '../App.css'
 
 export default function Navbar () {
-  const[darkMode,setDarkmode] = useState(true);
-  const navigate = useNavigate();
+
+  const themeContainer = null;
+
+useEffect( ()=>{
+
+  const themeContainer = document.getElementById('brightmodebox');
+  const bulbOn = document.getElementById('lightBulbOn');
+  const bulbOff = document.getElementById('lightBulbOff');
 
   if(localStorage.getItem("data-theme")==='null'){
     localStorage.setItem("data-theme", "dark")
   }
 
 
- 
-  const themeContainer = document.getElementById('brightmodebox');
-  const bulbOn = document.getElementById('lightBulbOn');
-  const bulbOff = document.getElementById('lightBulbOff');
-
-
-  function applyTheme (){
-
-    if(localStorage.getItem("data-theme")==='dark'){
-      themeContainer.classList.remove('dark') 
-      bulbOn.classList.remove('hidden')
-      bulbOff.classList.add('hidden')
-    }else if (localStorage.getItem("data-theme")==='light'){
-      themeContainer.classList.add('dark')
-      bulbOn.classList.add('hidden')
-      bulbOff.classList.remove('hidden')
-    }
+  if(localStorage.getItem("data-theme")==='dark'){
+    themeContainer.classList.add('dark') 
+    bulbOn.classList.add('hidden')
+    bulbOff.classList.remove('hidden')
+  }else if (localStorage.getItem("data-theme")==='light'){
+    themeContainer.classList.remove('dark')
+    bulbOn.classList.remove('hidden')
+    bulbOff.classList.add('hidden')
   }
 
+})
 
+  const navigate = useNavigate();
+
+  
   function toggleDarkmode(){
     
     const themeContainer = document.getElementById('brightmodebox');
@@ -82,7 +83,7 @@ export default function Navbar () {
       const Contact =  document.getElementById('Contact')
 
       window.scrollTo({
-        top: Contact.offsetTop,
+        top: Contact.offsetHeight + Contact.offsetTop,
         behavior: 'smooth'
     })
 
@@ -182,7 +183,7 @@ export default function Navbar () {
               <img src='/icons/instagram.svg' alt='Instagram Icon'></img>
             </motion.a>
             <motion.a
-              href=""
+              href="mailto:tadeugsvieira@gmail.com"
               target={"_blank"}
               className="w-8 mx-3 hover:animate-pulse"
               whileHover={{ y: 2 }}

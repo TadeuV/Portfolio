@@ -21,16 +21,14 @@ export default function ProjectsSlider() {
     return (
       <Slider {...settings}>
         <div className="h-[475px] w-[100%] ">
-          <div className="bg-[url('/Projects/GrocerAppFront-Desk.png')] h-full w-full bg-cover bg-left bg-no-repeat "></div>
-          {/* <div className="bg-[url('/Projects/GrocerAppFront-Desk.png')] h-full w-full bg-contain xl:bg-cover bg-center xl:bg-left bg-no-repeat "></div> */}
+          <div className="bg-[url('/Projects/GrocerAppFront-Desk.png')] h-full w-full bg-cover bg-start bg-no-repeat"></div>
         </div>
         <div className="h-[475px] w-[100%] ">
-          <div className="bg-[url('/Projects/1-GrocerAppIn-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat "></div>
+          <div className="bg-[url('/Projects/1-GrocerAppIn-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
         </div>
-        <div className="h-[475px] w-[100%]">
-          <div className="bg-[url('/Projects/GrocerAppForm-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat "></div>
+        <div className="h-[475px] w-[100%] ">
+          <div className="bg-[url('/Projects/GrocerAppForm-Desk.png')] h-full w-full bg-cover bg-center bg-no-repeat"></div>
         </div>
-
       </Slider>
     );
   }
